@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Lucky Vidhani</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"><a href="#contact" class="text-decoration-none text-white">Contact</a></button>
+      </div>
+    </nav>
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start d-flex flex-column justify-content-center" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Lucky Vidhani</span>
+          </h2>
+          <p class="text-muted">
+            I am a skilled web developer with expertise in creating fully responsive websites and managing backend development. I am eager to contribute my skills and grow in a professional environment.
+          </p>
+          <div><button class="c-btn h-btn mt-0 md:mt-3 py-2 md:py-3 px-4 md:px-5 rounded-pill">Hire Me</button></div>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/lucky.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Provide Wide Range of <br />
+          Digital Services
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-2 md:mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img src="images/service-icon1.png" class="w-25 img-fluid img" alt="" />
+            </div>
+            <div class="content mt-3" id="section">
+              <h4>Web Design</h4>
+              <p class="text-muted article mb-0">
+                Crafting visually stunning and user-friendly web designs that leave a
+                lasting impression. Bringing
+              </p>
+              <p class="text-muted moretext mb-0">
+                creativity and functionality together for seamless digital
+                experiences. Let’s transform your ideas into designs that inspire and
+                engage!
+              </p>
+              <div class="mt-2 md:mt-3">
+                <a href="#" class="link moreless-button">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img src="images/service-icon2.png" class="w-25 img-fluid img" alt="" />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Development</h4>
+              <p class="text-muted article mb-0">
+                Developing dynamic, responsive, and performance-driven websites
+                tailored to your needs. Merging
+              </p>
+              <p class="text-muted moretext mb-0">
+                innovation with functionality to create seamless user experiences.
+                Let’s turn your vision into a robust digital solution that stands out!
+              </p>
+              <div class="mt-2 md:mt-3">
+                <a href="#" class="link moreless-button">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img src="images/service-icon3.png" class="w-25 img-fluid img" alt="" />
+            </div>
+            <div class="content mt-3">
+              <h4>Debugging</h4>
+              <p class="text-muted article mb-0">
+                Identifying and fixing issues to ensure smooth and efficient
+                functionality. Delivering error-free solutions
+              </p>
+              <p class="text-muted moretext mb-0">with precision and expertise!</p>
+              <div class="mt-2 md:mt-3">
+                <a href="#" class="link moreless-button">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-11 col-md-6">
+              <div class="progress-card d-flex flex-column align-items-center gap-3">
+                <div class="circular-progress html-css">
+                  <span class="progress-value html-progress">0%</span>
+                </div>
+                <span class="text">HTML & CSS</span>
+              </div>
+            </div>
+            <div class="col-11 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card d-flex flex-column align-items-center gap-3">
+                <div class="circular-progress javascript">
+                  <span class="progress-value javascript-progress">0%</span>
+                </div>
+                <span class="text">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-11 col-md-6">
+              <div class="progress-card d-flex flex-column align-items-center gap-3">
+                <div class="circular-progress php">
+                  <span class="progress-value php-progress">0%</span>
+                </div>
+                <span class="text">PHP</span>
+              </div>
+            </div>
+            <div class="col-11 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card d-flex flex-column align-items-center gap-3">
+                <div class="circular-progress reactjs">
+                  <span class="progress-value reactjs-progress">0%</span>
+                </div>
+                <span class="text">ReactJS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Skills</small>
+            <h3>Beautiful & Unique Digital Experiences</h3>
+            <ul class="list-style-none">
+              <li class="mb-2 mt-2">I am proficient in HTML and CSS, enabling me to create visually appealing and responsive web pages.</li>
+              <li class="mb-2">With strong knowledge of JavaScript, I build dynamic and interactive user interfaces.</li>
+              <li class="mb-2">I specialize in React.js for developing modern, scalable front-end applications.</li>
+              <li class="mb-2">I have experience with MySQL, effectively managing and querying relational databases.</li>
+              <li class="mb-2">Additionally, I am skilled in C++, excelling in problem-solving and logic-based programming.</li>
+            </ul>
+            <button class="c-btn h-btn mt-3 py-2 lg:py-3 px-4 lg:px-5 rounded-pill">
+              <!-- here download attribute is used for adding download functionality to button  -->
+              <a
+                href="lucky_.pdf"
+                download="SampleCV"
+                style="text-decoration: none;color: #fff;"
+                >Download CV</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3 class="mt-0 md:mt-2">Check My Portfolio</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-3 md:mt-4">
+        <!-- here we will create custom attribute using data- for filtering -->
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="game">Game</button>
+        <button class="filter-item" data-filter="webapp">Web App</button>
+        <button class="filter-item" data-filter="website">Website</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 game all col-12 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/quiz.png" class="card-img-top img-responsive" width="415" height="300" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Quiz Game</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+               <div class="d-flex justify-content-center gap-5">
+                <a href="https://quiz-game-ebon.vercel.app/" class="link">Live Preview</a>
+                <a href="https://github.com/lucky15895/quiz-game" class="link2">View Source Code</a>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-12 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/yellow-kitchen-website.png"
+                class="card-img-top img-responsive" style="background-color: lightcoral; padding: 10px;"
+                alt="..." width="415" height="300"
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Yellow Kitchen Website</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span
+                ><br />
+                <div class="d-flex justify-content-center gap-5">
+                  <a href="https://yellow-kitchen-food-app.vercel.app/" class="read-more-btn link">Live Preview</a>
+                  <a href="https://github.com/lucky15895/yellow-kitchen-food-app" class="link2">View Source Code</a>
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 webapp all col-12 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/movie-search-app.png" class="card-img-top" width="415" height="300" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Movie Search App</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">App</span
+                ><br />
+                <div class="d-flex justify-content-center gap-5">
+                  <a href="https://movie-search-app-mocha.vercel.app/" class="read-more-btn link">Live Preview</a>
+                  <a href="https://github.com/lucky15895/movie-search-app" class="link2">View Source Code</a>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 game all col-12 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/note-app.png" class="card-img-top" width="415" height="300" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Note App</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">App</span
+                ><br />
+                <div class="d-flex justify-content-center gap-5">
+                  <a href="https://note-app-liard-sigma.vercel.app/" class="read-more-btn link">Live Preview</a>
+                  <a href="https://github.com/lucky15895/note-app" class="link2">View Source Code</a>
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-12 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/tutorial-freaks-web.png" class="card-img-top img-responsive" width="415"
+               height="300" alt="..." style="background-color: darkslategray; padding: 10px;" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Tutorials Freak Website</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span
+                ><br />
+                <div class="d-flex justify-content-center gap-5">
+                  <a href="https://tutorials-freak-web-app.vercel.app/" class="read-more-btn link">Live Preview</a>
+                  <a href="https://github.com/lucky15895/tutorials-freak-web-app" class="link2">View Source Code</a>
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 webapp all col-12 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/weather-app.png"
+                class="card-img-top img-responsive"
+                alt="..." width="415" height="300"
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Weather App</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Web App</span
+                ><br />
+                <div class="d-flex justify-content-center gap-5">
+                  <a href="https://weather-app-azure-eta-61.vercel.app/" class="read-more-btn link">Live Preview</a>
+                  <a href="https://github.com/lucky15895/weather-app" class="link2">View Source Code</a>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- blog section starts -->
+    <section class="blog mt-5 pb-5" id="blog">
+      <div class="heading text-center pt-5">
+        <small>Latest News</small>
+        <h3 class="mt-0 md:mt-2">Blog & Articles</h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <div class="blogpost col-md-4 col-12 website all">
+          <div class="card">
+            <img
+              src="images/yellow-kitchen-website.png"
+              class="card-img-top img-responsive"
+              alt="..." style="background-color: lightcoral; padding: 10px;" width="415" height="300"
+            />
+            <div class="card-body px-4">
+              <small>By Lucky Vidhani</small
+              ><span class="ms-3">August 23,2024</span>
+              <h4 class="card-title">
+                <a href="">Yellow Kitchen Website</a>
+              </h4>
+              <p class="text-muted">
+                This structure is simple, but it captures the essence of a "Yellow Kitchen" website with Bootstrap's ease of use and custom styles.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-12 mt-4 mt-md-0 game all">
+          <div class="card">
+            <img
+              src="images/quiz.png"
+              class="card-img-top img-responsive"
+              alt="..." width="415" height="300"
+            />
+            <div class="card-body px-4">
+              <small>By Lucky Vidhani</small
+              ><span class="ms-3">August 8,2024</span>
+              <h4 class="card-title">
+                <a href="">Quiz Game</a>
+              </h4>
+              <p class="text-muted">
+                This is a very basic quiz game that can be expanded by adding more questions, user answers, and even scoring functionality!
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-12 mt-4 mt-md-0 webapp all">
+          <div class="card">
+            <img
+              src="images/weather-app.png"
+              class="card-img-top img-responsive"
+              alt="..." width="415" height="300"
+            />
+            <div class="card-body px-4">
+              <small>By Lucky Vidhani</small
+              ><span class="ms-3">November 31,2024</span>
+              <h4 class="card-title">
+                <a href="">Weather App</a>
+              </h4>
+              <p class="text-muted">
+                Create your own weather app with HTML for structure, CSS for design, and JavaScript for fetching live data.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- here we will make modals if Read more link is clicked the modal will popup -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/yellow-kitchen-website.png" width="100%" height="250" style="background-color: lightcoral; padding: 10px;" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Lucky Vidhani</small
+                    ><span class="text-muted ms-2">August 23,2022</span>
+                  <h4 class="card-title mt-3">Yellow Kitchen Website</h4>
+                  <div class="social-links mt-4" data-aos="fade-up">
+                    <a href="mailto:luckyvidhani15@gmail.com"><button href="" class="rounded-pill dribble">
+                      <i class="bi bi-send-fill"></i>
+                    </button></a>
+                    <a href="https://github.com/lucky15895/yellow-kitchen-food-app"><button class="rounded-pill github">
+                      <i class="bi bi-github"></i>
+                    </button></a>
+                    <a href="http://www.linkedin.com/in/lucky15"><button class="rounded-pill linkedin">
+                      <i class="bi bi-linkedin"></i>
+                    </button></a>
+                  </div>
+                  <p class="text-muted mt-3">Welcome to our vibrant Yellow Kitchen website! Here, we combine style, functionality, and a splash of sunny color to create the perfect kitchen environment. Crafted using HTML, CSS, and JavaScript, our website offers seamless navigation and a visually appealing experience. Whether you're looking for design inspiration or need practical kitchen tips, our site has it all. Explore our content and get ready to transform your kitchen into a bright, cheerful space!</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/quiz.png" width="100%" height="250" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <div class="d-flex justify-content-between">
+                    <small class="">By Lucky Vidhani</small>
+                    <span class="text-muted">August 8,2024</span>
+                  </div>
+                  <h4 class="card-title mt-2">Quiz Game</h4>
+                  <div class="social-links mt-4" data-aos="fade-up">
+                    <a href="mailto:luckyvidhani15@gmail.com"><button href="" class="rounded-pill dribble">
+                      <i class="bi bi-send-fill"></i>
+                    </button></a>
+                    <a href="https://github.com/lucky15895/quiz-game"><button class="rounded-pill github">
+                      <i class="bi bi-github"></i>
+                    </button></a>
+                    <a href="http://www.linkedin.com/in/lucky15"><button class="rounded-pill linkedin">
+                      <i class="bi bi-linkedin"></i>
+                    </button></a>
+                  </div>
+                  <p class="text-muted mt-3">This is a very basic quiz game that can be expanded by adding more questions, user answers, and even scoring functionality! Build your own quiz game using HTML, CSS, and JavaScript to test your programming knowledge or challenge friends. HTML provides the framework with question areas and answer buttons. With CSS, you can style the game for a modern and clean interface, making it visually appealing. JavaScript takes care of the functionality, from showing questions to tracking scores and displaying results. This simple project is a great way to improve your web development skills while creating something fun and interactive.</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/weather-app.png" width="100%" height="250" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <div class="d-flex justify-content-between">
+                    <small class="">By Lucky Vidhani</small>
+                    <span class="text-muted">November 31,2024</span>
+                  </div>
+                  <h4 class="card-title mt-2">Weather App</h4>
+                  <div class="social-links mt-4" data-aos="fade-up">
+                    <a href="mailto:luckyvidhani15@gmail.com"><button href="" class="rounded-pill dribble">
+                      <i class="bi bi-send-fill"></i>
+                    </button></a>
+                    <a href="https://github.com/lucky15895/weather-app"><button class="rounded-pill github">
+                      <i class="bi bi-github"></i>
+                    </button></a>
+                    <a href="http://www.linkedin.com/in/lucky15"><button class="rounded-pill linkedin">
+                      <i class="bi bi-linkedin"></i>
+                    </button></a>
+                  </div>
+                  <p class="text-muted mt-3">Create your own weather app with HTML for structure, CSS for design, and JavaScript for fetching live data. With a combination of HTML, CSS, and JavaScript, you can create a fully functional weather app that fetches live data from weather APIs. HTML forms the structure, providing sections for location input, weather display, and more. CSS enhances the user experience by styling your app with modern and responsive design elements. JavaScript powers the app by making API calls, parsing weather data, and updating the UI dynamically. By combining these technologies, you can build a lightweight yet powerful weather app that works across devices.</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <h3>Contact Details</h3>
+      </div>
+      <div class="row justify-content-evenly mt-3 md:mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p class="text-black">Bangalore</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p><a href="tel:6232279666" class="text-decoration-none text-black">+91 6232279666</a></p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p class="text-black"><a href="mailto:luckyvidhani15@gmail.com" class="text-decoration-none text-black">luckyvidhani15@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-linkedin"></i>
+            </div>
+            <div class="col-11">
+              <p class="text-black"><a href="http://www.linkedin.com/in/lucky15" class="text-decoration-none text-black">Linkedin Profile</a></p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-github"></i>
+            </div>
+            <div class="col-11">
+              <p class="text-black"><a href="https://github.com/lucky15895" class="text-decoration-none text-black">Github Account</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-4 md:mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+        <div class="vr"></div>
+        <a href="#blog">Blog</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-4 md:mt-5" data-aos="fade-up">
+        <a href="mailto:luckyvidhani15@gmail.com"><button href="" class="rounded-pill dribble">
+          <i class="bi bi-send-fill"></i>
+        </button></a>
+        <a href="https://github.com/lucky15895"><button class="rounded-pill github">
+          <i class="bi bi-github"></i>
+        </button></a>
+        <a href="http://www.linkedin.com/in/lucky15"><button class="rounded-pill linkedin">
+          <i class="bi bi-linkedin"></i>
+        </button></a>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2025 Portfolio | Made By Lucky Vidhani</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>

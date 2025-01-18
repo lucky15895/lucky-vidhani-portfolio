@@ -1,0 +1,41 @@
+@media only screen and (max-width: 360px) and (min-width: 0px){
+    .home h2{
+        font-size: 34px;
+        line-height: 50px;
+    }
+    .c-orange{
+        font-size: 43px;
+    }
+    .home p{
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 0;
+    }
+    .c-btn{
+        font-size: 15px;
+    }
+    .heading h3{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .progress-card{
+        padding: 8%;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 5%;
+    }
+    #myBtnContainer button{
+        margin: 0px 5px;
+        font-size: 16px;
+    }
+    #myBtnContainer{
+        margin-bottom: 0px;
+    }
+    .img-responsive{
+        max-width: 100%;
+        height: auto;
+    }
+    .link, .link2{
+        font-size: 16px;
+    }
+}
